@@ -1,0 +1,163 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+   "http://www.w3.org/TR/html4/loose.dtd">
+<html lang="en">
+  <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <meta name="viewport" content="initial-scale=1.0">    <!-- So that mobile webkit will display zoomed in -->
+      <meta name="format-detection" content="telephone=no"> <!-- disable auto telephone linking in iOS -->
+	  <title>Stacking tables on responsive</title>
+	
+    <style type="text/css">
+		@import url(http://fonts.googleapis.com/css?family=Roboto:300,400,500);
+
+		body {
+			font-family: 'Roboto', sans-serif;
+		}
+
+		/* Media query for mobile*/
+		@media only screen and (max-width: 629px)  {
+		  .container {
+		  	width: 100%;
+		  }
+
+		  .full {
+			display:block;
+			width:100%;
+			padding-right: 0 !important;
+			padding-bottom: 10px;
+			padding-left: 0 !important;
+		  }
+		}
+	</style>    
+</head>
+
+<body style="margin:0; padding:10px 0;" bgcolor="#ffffff" leftmargin="0" topmargin="0" marginwidth="0" marginheight="0">
+
+	<br>
+
+	<!-- 100% wrapper -->
+	<table border="0" width="100%" height="100%" cellpadding="0" cellspacing="0" bgcolor="#ffffff">
+		<tr>
+			<td align="center" valign="top" bgcolor="#ffffff" style="background-color: #ffffff;">
+				<!-- ### FULL WIDTH CONTENT ### -->
+            	<table border="0" width="630" cellpadding="0" cellspacing="0" class="container">
+					<tr>
+						<td class="ContainerPadding" style="padding-left: 30px; padding-right: 30px; font-size: 15px; line-height: 22px; font-family: Helvetica, sans-serif; color: #333; text-align: center;">
+                        	<table width="100%" cellspacing="0" style="border: 3px dashed #e9e9e9; padding: 15px;">
+                              <tr>
+                                <td width="100%" dir="ltr" class="full">
+                         			<div style="background: #ff0033; padding: 20px; font-family: 'Roboto', sans-serif; font-weight: 300; color: #fff;">
+                                		<div style="text-transform:uppercase; font-size: 32px; margin-bottom: 10px; font-weight: 500;">
+                                			One Column
+                                		</div>
+                                  		Full width column.
+                                  	</div>
+                                </td>
+                              </tr>
+                            </table>
+                    	</td>
+                	</tr>
+				</table>
+            	<!-- ### END FULL WIDTH CONTENT ### -->
+				<br><br>
+        	</td>
+		</tr>
+
+		<tr>
+			<td align="center" valign="top" bgcolor="#ffffff" style="background-color: #ffffff;">
+				<!-- ### 2 COLUMN CONTENT ### -->
+      			<table border="0" width="630" cellpadding="0" cellspacing="0" class="container">
+					<tr>
+						<td class="ContainerPadding" style="padding-left: 30px; padding-right: 30px; font-size: 15px; line-height: 22px; font-family: Helvetica, sans-serif; color: #333; text-align: center;">
+            				<table width="100%" cellspacing="0" style="border: 3px dashed #e9e9e9; padding: 15px;">
+                				<tr>
+                  					<td width="50%" dir="ltr" class="full" style="padding-right: 15px;">
+             			  				<div style="background: #40b3ff; padding: 20px; font-family: 'Roboto', sans-serif; font-weight: 300; color: #fff;">
+                  							<div style="text-transform:uppercase; font-size: 32px; margin-bottom: 10px; font-weight: 500;">
+                  								Left
+                  							</div>
+                  							The left column will stack at the top on mobile.
+                  						</div>
+                  					</td>
+
+                  					<td width="50%" dir="ltr" class="full" style="padding-left: 15px;">
+                    					<div style="background: #82b541; padding: 20px; font-family: 'Roboto', sans-serif; font-weight: 300; color: #fff;">
+                      						<div style="text-transform:uppercase; font-size: 32px; margin-bottom: 10px; font-weight: 500;">
+                      							Right
+                      						</div>
+                      						The right column will stack at the bottom on mobile.
+                  						</div>
+                  					</td>
+                				</tr>
+              				</table>
+          				</td>
+        			</tr>
+				</table>
+				<!-- ### END 2 COLUMN CONTENT ### -->
+				<br><br>
+     		</td>
+		</tr>
+
+    	<tr>
+			<td align="center" valign="top" bgcolor="#ffffff" style="background-color: #ffffff;">
+				<!-- ### 2 COLUMN CONTENT ### -->
+            	<table border="0" width="630" cellpadding="0" cellspacing="0" class="container">
+					<tr>
+						<td class="ContainerPadding" style="padding-left: 30px; padding-right: 30px; font-size: 15px; line-height: 22px; font-family: Helvetica, sans-serif; color: #333; text-align: center;">
+                        	<table dir="rtl" width="100%" cellspacing="0" style="border: 3px dashed #e9e9e9; padding: 15px;">
+                              	<tr>
+                                	<td width="50%" dir="ltr" class="full" style="padding-left: 15px;">
+                             			<div style="background: #82b541; padding: 20px; font-family: 'Roboto', sans-serif; font-weight: 300; color: #fff;">
+                                  			<div style="text-transform:uppercase; font-size: 32px; margin-bottom: 10px; font-weight: 500;">
+                                  				Right
+                                  			</div>
+                             				The right column will stack at the top on mobile.
+                            			</div>
+                                	</td>
+
+                               		<td width="50%" dir="ltr" class="full" style="padding-right: 15px;">
+                                		<div style="background: #40b3ff; padding: 20px; font-family: 'Roboto', sans-serif; font-weight: 300; color: #fff;">
+	                                		<div style="text-transform:uppercase; font-size: 32px; margin-bottom: 10px; font-weight: 500;">
+	                                			Left
+	                                		</div>
+                                  			The left column will stack at the bottom on mobile.
+                                  		</div>
+                                	</td>
+                              	</tr>
+                            </table>
+                    	</td>
+                	</tr>
+				</table>
+				<!-- ### END 2 COLUMN CONTENT ### -->
+        		<br><br>
+      		</td>
+		</tr>
+
+    	<tr>
+      		<td align="center" valign="top" bgcolor="#ffffff" style="background-color: #ffffff;">
+      			<!-- ### FULL WIDTH CONTENT ### -->
+        		<table border="0" width="630" cellpadding="0" cellspacing="0" class="container">
+					<tr>
+						<td class="ContainerPadding" style="padding-left: 30px; padding-right: 30px; font-size: 15px; line-height: 22px; font-family: Helvetica, sans-serif; color: #333; text-align: center;">
+							<table width="100%" cellspacing="0" style="border: 3px dashed #e9e9e9; padding: 15px;">
+								<tr>
+									<td width="100%" dir="ltr" class="full">
+										<div style="background: #ff0033; padding: 20px; font-family: 'Roboto', sans-serif; font-weight: 300; color: #fff;">
+											<div style="text-transform:uppercase; font-size: 32px; margin-bottom: 10px; font-weight: 500;">
+												One Column
+											</div>
+											Full width column.
+										</div>
+									</td>
+								</tr>
+							</table>
+						</td>
+					</tr>
+        		</table>
+        		<!-- ### END FULL WIDTH CONTENT ### -->
+        		<br><br>
+          	</td>
+    	</tr>
+	</table>                          
+</body>
+</html>
